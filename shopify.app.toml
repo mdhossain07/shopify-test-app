@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7f7c96416064fb7d8f7e5c69a9fdf25b"
+name = "abir-test-app"
+handle = "abir-test-app"
+application_url = "https://vanilla-hope-removing-men.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "abir-store-seo.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_customers,read_locations,read_products,read_themes,write_content,write_customers,write_online_store_navigation,write_products,write_themes"
+
+[auth]
+redirect_urls = [
+  "https://vanilla-hope-removing-men.trycloudflare.com/auth/callback",
+  "https://vanilla-hope-removing-men.trycloudflare.com/auth/shopify/callback",
+  "https://vanilla-hope-removing-men.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
